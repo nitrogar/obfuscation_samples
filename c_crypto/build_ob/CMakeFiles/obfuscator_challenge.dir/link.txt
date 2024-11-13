@@ -1,0 +1,1 @@
+gcc CMakeFiles/obfuscator_challenge.dir/main_ob.c.o CMakeFiles/obfuscator_challenge.dir/helpers.c.o CMakeFiles/obfuscator_challenge.dir/chall_1.c.o -o obfuscator_challenge
