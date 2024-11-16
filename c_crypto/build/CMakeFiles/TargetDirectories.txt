@@ -1,4 +1,0 @@
-/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles/obfuscator_challenge.dir
-/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles/obfuscator_challenge_obf.dir
-/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles/edit_cache.dir
-/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles/rebuild_cache.dir
