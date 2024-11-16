@@ -1,4 +1,0 @@
-/home/archiver/projects/obfuscator_samples/c_crypto/build_ob/CMakeFiles/obfuscator_challenge.dir
-/home/archiver/projects/obfuscator_samples/c_crypto/build_ob/CMakeFiles/run.dir
-/home/archiver/projects/obfuscator_samples/c_crypto/build_ob/CMakeFiles/edit_cache.dir
-/home/archiver/projects/obfuscator_samples/c_crypto/build_ob/CMakeFiles/rebuild_cache.dir
