@@ -4,15 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-void rotate_right(char *in, char *out, int size, int n) {
-  int i;
-  if (n > size)
-    panic("cant rotate n > size");
-  for (i = 0; i < n; i++)
-    out[i] = in[size - 1 - i];
-  for (i = n; i < size - n; i++)
-    out[i] = in[i];
-}
 
 void rotate(uint8_t *out, uint8_t *in, size_t in_size, uint32_t n,
             uint32_t direction) {
@@ -41,15 +32,6 @@ void rotate(uint8_t *out, uint8_t *in, size_t in_size, uint32_t n,
     }
 }
 
-void rotate_test(uint8_t *in, size_t in_size, uint32_t by) {
-  uint8_t *out = malloc(in_size + 1);
-  printf("\nrotate 1\n");
-  rotate(out, in, in_size, by, 1);
-  print_bytes(out, in_size);
-  printf("\nrotate 0\n");
-  rotate(out, in, in_size, by, 0);
-  print_bytes(out, in_size);
-}
 void xor
     (uint8_t * out, uint8_t *in, size_t n) {
       for (size_t i = 0; i < n; i++)

@@ -1,9 +1,10 @@
 #include "chall.h"
+#include "helpers.h"
 #include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
-#include "helpers.h"
+
+void init_tigress() {}
 
 int main() {
   int sel_chal;

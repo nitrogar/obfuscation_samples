@@ -15,12 +15,6 @@ void present_challenges() {
   printf("\n(1) Challenge 1\n");
   printf("[*] Challenge 2\n");
   printf("[*] Challenge 3\n");
-  printf("[*] Challenge 4\n");
-  printf("[*] Challenge 5\n");
-  printf("[*] Challenge 6\n");
-  printf("[*] Challenge 7\n");
-  printf("[*] Challenge 8\n");
-  printf("[*] Challenge 9\n");
 }
 
 void user_input_int(char *msg, int *in) {

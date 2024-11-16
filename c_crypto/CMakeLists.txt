@@ -15,6 +15,44 @@ option(ENABLE_UBSAN "Enable Undefined Behavior Sanitizer" OFF)
 option(ENABLE_TSAN "Enable Thread Sanitizer" OFF)
 option(ENABLE_MSAN "Enable Memory Sanitizer" OFF)
 
+
+option(ENABLE_PLAIN_CODE "JUST NORMAL CODE" ON)
+option(ENABLE_TIG_OPQ "TIGRESS Opaque Predicates, Branch Functions, and Encoded Arithmetic " ON)
+option(ENABLE_TIG_VIRT_MOD "Virtualization and Self-Modification " OFF)
+option(ENABLE_TIG_VIRT_OBF "Virtualization and Dynamic Obfuscation  " OFF)
+option(ENABLE_TIG_MERG_VIRT_ENCODE "Merge, Virtualization, and Encode Literals  " OFF)
+option(ENABLE_TIG_JIT "TIGRESS JIT" OFF)
+option(ENABLE_TIG_JIT_DYN "TIGRESS JIT Dynamic" OFF)
+option(ENABLE_TIG_VIRT_OBF "Virtualization and Dynamic Obfuscation  " OFF)
+
+if(ENABLE_TIG_OPQ)
+  execute_process(tigress --Seed=42 --Statistics=0 --Verbosity=0 --Environment=x86_64:Linux:Gcc:5.1 
+        --Transform=InitEntropy \
+        --Functions=init_tigress \
+        --InitEntropyKinds=vars \
+        --Transform=InitOpaque \
+        --Functions=init_tigress \
+        --InitOpaqueStructs=list,array,env  \
+        --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+        --Transform=AddOpaque \
+        --Functions=main,start_challenge1,hash_round,padding,sbox,xor,add,rotate  \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+        --Transform=AntiBranchAnalysis \
+        --Functions=main,start_challenge1,hash_round,padding,sbox,xor,add,rotate  \
+        --AntiBranchAnalysisKinds=branchFuns \
+        --AntiBranchAnalysisObfuscateBranchFunCall=false \
+        --AntiBranchAnalysisBranchFunFlatten=true \
+        --Transform=EncodeArithmetic \
+        --Functions=main,start_challenge1,hash_round,padding,sbox,xor,add,rotate  \
+        main.c chall_1.c --out=tigress_out.c)
+
+      set(SOURCES tigress_opaque.c  helpers.c)
+endif()
+if(ENABLE_PLAIN_CODE)
+  set(SOURCES main.c chall_1.c helpers.c)
+endif()
 # Sanitizer configuration function
 function(add_sanitizer_flags)
     if(ENABLE_ASAN)
@@ -47,7 +85,8 @@ endfunction()
 
 
 # Add executable
-add_executable(obfuscator_challenge main_ob.c helpers.c chall_1.c)
+if
+add_executable(obfuscator_challenge  SOURCES )
 
 # Set compiler warnings
 target_compile_options(obfuscator_challenge  PRIVATE -Wall -Wextra -Wpedantic -g)
