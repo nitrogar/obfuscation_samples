@@ -12,9 +12,8 @@ void clear_stdin() {
 }
 void present_challenges() {
 
-  printf("\n(1) Challenge 1\n");
-  printf("[*] Challenge 2\n");
-  printf("[*] Challenge 3\n");
+  printf("\n(1) Challenge:  simplify the function\n");
+  printf("(2) TBA :( \n");
 }
 
 void user_input_int(char *msg, int *in) {

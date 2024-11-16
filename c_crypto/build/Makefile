@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/archiver/projects/obfuscator_samples/c_crypto
+CMAKE_SOURCE_DIR = /home/silber/projects/obfuscation_samples/c_crypto
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/archiver/projects/obfuscator_samples/c_crypto/build
+CMAKE_BINARY_DIR = /home/silber/projects/obfuscation_samples/c_crypto/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles /home/archiver/projects/obfuscator_samples/c_crypto/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles /home/silber/projects/obfuscation_samples/c_crypto/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ obfuscator_challenge/fast:
 .PHONY : obfuscator_challenge/fast
 
 #=============================================================================
-# Target rules for targets named run
+# Target rules for targets named obfuscator_challenge_obf
 
 # Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
-.PHONY : run
+obfuscator_challenge_obf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obfuscator_challenge_obf
+.PHONY : obfuscator_challenge_obf
 
 # fast build rule for target.
-run/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-.PHONY : run/fast
+obfuscator_challenge_obf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/build
+.PHONY : obfuscator_challenge_obf/fast
 
 chall_1.o: chall_1.c.o
 .PHONY : chall_1.o
@@ -172,6 +172,7 @@ helpers.o: helpers.c.o
 # target to build an object file
 helpers.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge.dir/build.make CMakeFiles/obfuscator_challenge.dir/helpers.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/helpers.c.o
 .PHONY : helpers.c.o
 
 helpers.i: helpers.c.i
@@ -180,6 +181,7 @@ helpers.i: helpers.c.i
 # target to preprocess a source file
 helpers.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge.dir/build.make CMakeFiles/obfuscator_challenge.dir/helpers.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/helpers.c.i
 .PHONY : helpers.c.i
 
 helpers.s: helpers.c.s
@@ -188,6 +190,7 @@ helpers.s: helpers.c.s
 # target to generate assembly for a file
 helpers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge.dir/build.make CMakeFiles/obfuscator_challenge.dir/helpers.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/helpers.c.s
 .PHONY : helpers.c.s
 
 main.o: main.c.o
@@ -214,6 +217,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge.dir/build.make CMakeFiles/obfuscator_challenge.dir/main.c.s
 .PHONY : main.c.s
 
+tigress_iopq_aopq.o: tigress_iopq_aopq.c.o
+.PHONY : tigress_iopq_aopq.o
+
+# target to build an object file
+tigress_iopq_aopq.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/tigress_iopq_aopq.c.o
+.PHONY : tigress_iopq_aopq.c.o
+
+tigress_iopq_aopq.i: tigress_iopq_aopq.c.i
+.PHONY : tigress_iopq_aopq.i
+
+# target to preprocess a source file
+tigress_iopq_aopq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/tigress_iopq_aopq.c.i
+.PHONY : tigress_iopq_aopq.c.i
+
+tigress_iopq_aopq.s: tigress_iopq_aopq.c.s
+.PHONY : tigress_iopq_aopq.s
+
+# target to generate assembly for a file
+tigress_iopq_aopq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obfuscator_challenge_obf.dir/build.make CMakeFiles/obfuscator_challenge_obf.dir/tigress_iopq_aopq.c.s
+.PHONY : tigress_iopq_aopq.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,8 +249,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... run"
 	@echo "... obfuscator_challenge"
+	@echo "... obfuscator_challenge_obf"
 	@echo "... chall_1.o"
 	@echo "... chall_1.i"
 	@echo "... chall_1.s"
@@ -233,6 +260,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tigress_iopq_aopq.o"
+	@echo "... tigress_iopq_aopq.i"
+	@echo "... tigress_iopq_aopq.s"
 .PHONY : help
 
 

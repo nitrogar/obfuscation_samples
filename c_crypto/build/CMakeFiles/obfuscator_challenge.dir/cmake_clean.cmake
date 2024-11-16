@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/obfuscator_challenge.dir/helpers.c.o.d"
   "CMakeFiles/obfuscator_challenge.dir/main.c.o"
   "CMakeFiles/obfuscator_challenge.dir/main.c.o.d"
-  "obfuscator_challenge"
-  "obfuscator_challenge.pdb"
+  "bin/obfuscator_challenge"
+  "bin/obfuscator_challenge.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

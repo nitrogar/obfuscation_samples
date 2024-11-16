@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/archiver/projects/obfuscator_samples/c_crypto
+CMAKE_SOURCE_DIR = /home/silber/projects/obfuscation_samples/c_crypto
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/archiver/projects/obfuscator_samples/c_crypto/build
+CMAKE_BINARY_DIR = /home/silber/projects/obfuscation_samples/c_crypto/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/obfuscator_challenge.dir/depend.make
@@ -70,66 +70,66 @@ include CMakeFiles/obfuscator_challenge.dir/progress.make
 include CMakeFiles/obfuscator_challenge.dir/flags.make
 
 CMakeFiles/obfuscator_challenge.dir/main.c.o: CMakeFiles/obfuscator_challenge.dir/flags.make
-CMakeFiles/obfuscator_challenge.dir/main.c.o: /home/archiver/projects/obfuscator_samples/c_crypto/main.c
+CMakeFiles/obfuscator_challenge.dir/main.c.o: /home/silber/projects/obfuscation_samples/c_crypto/main.c
 CMakeFiles/obfuscator_challenge.dir/main.c.o: CMakeFiles/obfuscator_challenge.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/obfuscator_challenge.dir/main.c.o"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/main.c.o -MF CMakeFiles/obfuscator_challenge.dir/main.c.o.d -o CMakeFiles/obfuscator_challenge.dir/main.c.o -c /home/archiver/projects/obfuscator_samples/c_crypto/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/obfuscator_challenge.dir/main.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/main.c.o -MF CMakeFiles/obfuscator_challenge.dir/main.c.o.d -o CMakeFiles/obfuscator_challenge.dir/main.c.o -c /home/silber/projects/obfuscation_samples/c_crypto/main.c
 
 CMakeFiles/obfuscator_challenge.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/obfuscator_challenge.dir/main.c.i"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/archiver/projects/obfuscator_samples/c_crypto/main.c > CMakeFiles/obfuscator_challenge.dir/main.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/silber/projects/obfuscation_samples/c_crypto/main.c > CMakeFiles/obfuscator_challenge.dir/main.c.i
 
 CMakeFiles/obfuscator_challenge.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/obfuscator_challenge.dir/main.c.s"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/archiver/projects/obfuscator_samples/c_crypto/main.c -o CMakeFiles/obfuscator_challenge.dir/main.c.s
-
-CMakeFiles/obfuscator_challenge.dir/helpers.c.o: CMakeFiles/obfuscator_challenge.dir/flags.make
-CMakeFiles/obfuscator_challenge.dir/helpers.c.o: /home/archiver/projects/obfuscator_samples/c_crypto/helpers.c
-CMakeFiles/obfuscator_challenge.dir/helpers.c.o: CMakeFiles/obfuscator_challenge.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/obfuscator_challenge.dir/helpers.c.o"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/helpers.c.o -MF CMakeFiles/obfuscator_challenge.dir/helpers.c.o.d -o CMakeFiles/obfuscator_challenge.dir/helpers.c.o -c /home/archiver/projects/obfuscator_samples/c_crypto/helpers.c
-
-CMakeFiles/obfuscator_challenge.dir/helpers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/obfuscator_challenge.dir/helpers.c.i"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/archiver/projects/obfuscator_samples/c_crypto/helpers.c > CMakeFiles/obfuscator_challenge.dir/helpers.c.i
-
-CMakeFiles/obfuscator_challenge.dir/helpers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/obfuscator_challenge.dir/helpers.c.s"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/archiver/projects/obfuscator_samples/c_crypto/helpers.c -o CMakeFiles/obfuscator_challenge.dir/helpers.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/silber/projects/obfuscation_samples/c_crypto/main.c -o CMakeFiles/obfuscator_challenge.dir/main.c.s
 
 CMakeFiles/obfuscator_challenge.dir/chall_1.c.o: CMakeFiles/obfuscator_challenge.dir/flags.make
-CMakeFiles/obfuscator_challenge.dir/chall_1.c.o: /home/archiver/projects/obfuscator_samples/c_crypto/chall_1.c
+CMakeFiles/obfuscator_challenge.dir/chall_1.c.o: /home/silber/projects/obfuscation_samples/c_crypto/chall_1.c
 CMakeFiles/obfuscator_challenge.dir/chall_1.c.o: CMakeFiles/obfuscator_challenge.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/obfuscator_challenge.dir/chall_1.c.o"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/chall_1.c.o -MF CMakeFiles/obfuscator_challenge.dir/chall_1.c.o.d -o CMakeFiles/obfuscator_challenge.dir/chall_1.c.o -c /home/archiver/projects/obfuscator_samples/c_crypto/chall_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/obfuscator_challenge.dir/chall_1.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/chall_1.c.o -MF CMakeFiles/obfuscator_challenge.dir/chall_1.c.o.d -o CMakeFiles/obfuscator_challenge.dir/chall_1.c.o -c /home/silber/projects/obfuscation_samples/c_crypto/chall_1.c
 
 CMakeFiles/obfuscator_challenge.dir/chall_1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/obfuscator_challenge.dir/chall_1.c.i"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/archiver/projects/obfuscator_samples/c_crypto/chall_1.c > CMakeFiles/obfuscator_challenge.dir/chall_1.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/silber/projects/obfuscation_samples/c_crypto/chall_1.c > CMakeFiles/obfuscator_challenge.dir/chall_1.c.i
 
 CMakeFiles/obfuscator_challenge.dir/chall_1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/obfuscator_challenge.dir/chall_1.c.s"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/archiver/projects/obfuscator_samples/c_crypto/chall_1.c -o CMakeFiles/obfuscator_challenge.dir/chall_1.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/silber/projects/obfuscation_samples/c_crypto/chall_1.c -o CMakeFiles/obfuscator_challenge.dir/chall_1.c.s
+
+CMakeFiles/obfuscator_challenge.dir/helpers.c.o: CMakeFiles/obfuscator_challenge.dir/flags.make
+CMakeFiles/obfuscator_challenge.dir/helpers.c.o: /home/silber/projects/obfuscation_samples/c_crypto/helpers.c
+CMakeFiles/obfuscator_challenge.dir/helpers.c.o: CMakeFiles/obfuscator_challenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/obfuscator_challenge.dir/helpers.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/obfuscator_challenge.dir/helpers.c.o -MF CMakeFiles/obfuscator_challenge.dir/helpers.c.o.d -o CMakeFiles/obfuscator_challenge.dir/helpers.c.o -c /home/silber/projects/obfuscation_samples/c_crypto/helpers.c
+
+CMakeFiles/obfuscator_challenge.dir/helpers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/obfuscator_challenge.dir/helpers.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/silber/projects/obfuscation_samples/c_crypto/helpers.c > CMakeFiles/obfuscator_challenge.dir/helpers.c.i
+
+CMakeFiles/obfuscator_challenge.dir/helpers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/obfuscator_challenge.dir/helpers.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/silber/projects/obfuscation_samples/c_crypto/helpers.c -o CMakeFiles/obfuscator_challenge.dir/helpers.c.s
 
 # Object files for target obfuscator_challenge
 obfuscator_challenge_OBJECTS = \
 "CMakeFiles/obfuscator_challenge.dir/main.c.o" \
-"CMakeFiles/obfuscator_challenge.dir/helpers.c.o" \
-"CMakeFiles/obfuscator_challenge.dir/chall_1.c.o"
+"CMakeFiles/obfuscator_challenge.dir/chall_1.c.o" \
+"CMakeFiles/obfuscator_challenge.dir/helpers.c.o"
 
 # External object files for target obfuscator_challenge
 obfuscator_challenge_EXTERNAL_OBJECTS =
 
-obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/main.c.o
-obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/helpers.c.o
-obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/chall_1.c.o
-obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/build.make
-obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable obfuscator_challenge"
+bin/obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/main.c.o
+bin/obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/chall_1.c.o
+bin/obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/helpers.c.o
+bin/obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/build.make
+bin/obfuscator_challenge: CMakeFiles/obfuscator_challenge.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bin/obfuscator_challenge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obfuscator_challenge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/obfuscator_challenge.dir/build: obfuscator_challenge
+CMakeFiles/obfuscator_challenge.dir/build: bin/obfuscator_challenge
 .PHONY : CMakeFiles/obfuscator_challenge.dir/build
 
 CMakeFiles/obfuscator_challenge.dir/clean:
@@ -137,6 +137,6 @@ CMakeFiles/obfuscator_challenge.dir/clean:
 .PHONY : CMakeFiles/obfuscator_challenge.dir/clean
 
 CMakeFiles/obfuscator_challenge.dir/depend:
-	cd /home/archiver/projects/obfuscator_samples/c_crypto/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/archiver/projects/obfuscator_samples/c_crypto /home/archiver/projects/obfuscator_samples/c_crypto /home/archiver/projects/obfuscator_samples/c_crypto/build /home/archiver/projects/obfuscator_samples/c_crypto/build /home/archiver/projects/obfuscator_samples/c_crypto/build/CMakeFiles/obfuscator_challenge.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/silber/projects/obfuscation_samples/c_crypto/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silber/projects/obfuscation_samples/c_crypto /home/silber/projects/obfuscation_samples/c_crypto /home/silber/projects/obfuscation_samples/c_crypto/build /home/silber/projects/obfuscation_samples/c_crypto/build /home/silber/projects/obfuscation_samples/c_crypto/build/CMakeFiles/obfuscator_challenge.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/obfuscator_challenge.dir/depend
 
