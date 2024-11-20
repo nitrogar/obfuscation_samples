@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="obfuscator_challenge" Options="332544" VMCodeSectionName=".???" VMComplexity="20">
+        <Procedures>
+            <Procedure MapAddress="add" IncludedInCompilation="0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="lfsr113" IncludedInCompilation="0" Options="0" />
+            <Procedure MapAddress="user_input_string" Options="0" CompilationType="2" />
+            <Procedure MapAddress="clear_stdin" Options="0" CompilationType="2" />
+            <Procedure MapAddress="user_input_char" Options="0" CompilationType="2" />
+            <Procedure MapAddress="_fini" Options="0" CompilationType="2" />
+            <Procedure MapAddress="hex_tobytes" Options="0" CompilationType="2" />
+            <Procedure MapAddress="panic" Options="0" CompilationType="2" />
+            <Procedure MapAddress="rotate" IncludedInCompilation="0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="hash_round" Options="0" CompilationType="2" />
+            <Procedure MapAddress="welcome_message" Options="0" CompilationType="2" />
+            <Procedure MapAddress="_start" Options="0" CompilationType="2" />
+            <Procedure MapAddress="xor" IncludedInCompilation="0" Options="0" />
+            <Procedure MapAddress="padding" IncludedInCompilation="0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="sbox" IncludedInCompilation="0" Options="0" />
+            <Procedure MapAddress="main" Options="0" CompilationType="2" />
+            <Procedure MapAddress="init_tigress" Options="0" CompilationType="2" />
+            <Procedure MapAddress="start_challenge1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="print_bytes" Options="0" CompilationType="2" />
+            <Procedure MapAddress="print_banner" Options="0" CompilationType="2" />
+            <Procedure MapAddress="bytes_tohex" Options="0" CompilationType="2" />
+            <Procedure MapAddress="user_input_bytes" Options="0" CompilationType="2" />
+            <Procedure MapAddress="test_byte_hex" Options="0" CompilationType="2" />
+            <Procedure MapAddress="present_challenges" Options="0" CompilationType="2" />
+            <Procedure MapAddress="_init" Options="0" CompilationType="2" />
+            <Procedure MapAddress="user_input_int" Options="0" CompilationType="2" />
+        </Procedures>
+    </Protection>
+</Document>
