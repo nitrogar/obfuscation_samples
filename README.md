@@ -1,1 +1,1 @@
-Personal Research on how different obfuscators works on C/C++ [still underdevelopments]
+Personal Research on how different obfuscators works on C/C++ [still underdevelopments] [MIT License]
