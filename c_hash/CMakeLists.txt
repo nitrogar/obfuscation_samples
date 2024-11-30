@@ -239,14 +239,14 @@ if(ENABLE_INIT_ENTROPY OR ENABLE_INIT_OPAQUE OR ENABLE_INIT_BRANCH_FUNS OR
     run_tigress_obfuscation(${TIGRESS_SOURCE_OUT})
 
     # Create obfuscated target
-    add_executable(obfuscator_challenge_obf ${TIGRESS_SOURCE_OUT} ${COMMON_SOURCES})
-    target_compile_options(obfuscator_challenge_obf PRIVATE -Wall -Wextra -Wpedantic -g)
+    add_executable(obfuscator_challenge_tigress ${TIGRESS_SOURCE_OUT} ${COMMON_SOURCES})
+    target_compile_options(obfuscator_challenge_tigress PRIVATE -Wall -Wextra -Wpedantic -g)
 
     # Add special flags for JIT if enabled
     if(ENABLE_JIT)
-        target_compile_options(obfuscator_challenge_obf PRIVATE -rdynamic)
-        target_link_options(obfuscator_challenge_obf PRIVATE -ldl)
+        target_compile_options(obfuscator_challenge_tigress PRIVATE -rdynamic)
+        target_link_options(obfuscator_challenge_tigress PRIVATE -ldl)
     endif()
 
-    add_sanitizer_flags(obfuscator_challenge_obf)
+    add_sanitizer_flags(obfuscator_challenge_tigress)
 endif()
